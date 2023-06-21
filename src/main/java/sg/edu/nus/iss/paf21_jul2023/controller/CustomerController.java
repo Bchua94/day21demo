@@ -19,6 +19,7 @@ public class CustomerController {
     @Autowired
     CustomerService custSvc; 
 
+    @GetMapping 
     public List<Customer> getAllCustomers() {
         return custSvc.getAllCustomers();
     }
